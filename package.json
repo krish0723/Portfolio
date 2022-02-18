@@ -3,6 +3,9 @@
   "description": "Retro - One Page Modern Resume Template",
   "version": "1.0.0",
   "author": "Syed Muaz Ali",
+  "engines": {
+      "node": "14.17.6"
+  },
   "private": true,
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^5.12.1",
