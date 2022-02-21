@@ -1,6 +1,6 @@
 ---
 id: 3
 image: './image.jpg'
-title: "Angular Project"
-category: "Angular.js"
+title: "Social Lister"
+category: "REACT"
 ---

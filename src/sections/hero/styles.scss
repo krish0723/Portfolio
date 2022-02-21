@@ -38,12 +38,21 @@
             }
             .content-text {
                 z-index: 50;
+                color:#fff;
+                font-size: 40px;
+                width: 5000px;
+                h1 {
+                    color: #fff;
+                    font-family: Verdana;
+                    font-size: 50px;
+                    font-weight: 700;
+                }
             }
             .Typewriter span {
                 color: #fff;
                 font-size: 30px;
                 font-family: Verdana;
-                font-weight: 700;
+                font-weight: 500;
                 &.Typewriter__cursor {
                     color: #0a331b;
                 }

@@ -24,7 +24,9 @@ class Hero extends React.Component {
               <div className="line-text">
                 <h4>Portfolio</h4>
               </div>
-              <Glitch text="Krish Chetan" />
+              <div className="content-text">
+                  <h1>Krishna Chetan</h1>
+              </div>
               <Typewriter
                 options={{
                   strings: [

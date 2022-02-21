@@ -180,7 +180,7 @@ class Portfolio extends React.Component {
           className="portfolio_category"
           onClick={() => this.changeCategory(value)}
           key={index}
-        > 
+        >
           <span className={`${this.state.category === value ? 'active' : ''}`}>
             {value}
           </span>
@@ -194,7 +194,7 @@ export default props => (
   <StaticQuery
     query={graphql`
           query {
-            items: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(portfolio)/"}}, sort: {fields: [frontmatter___id], order: ASC}, 
+            items: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/(portfolio)/"}}, sort: {fields: [frontmatter___id], order: ASC},
             # The layout is built for 6 portfolio items #
             limit: 6) {
               edges {
@@ -215,7 +215,7 @@ export default props => (
                 }
               }
             }
-          }      
+          }
         `}
     render={({ items }) => <Portfolio items={items.edges} {...props} />}
   />
