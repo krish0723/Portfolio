@@ -7,6 +7,9 @@ import BaffleText from 'components/baffle-text'
 import Tilt from 'react-tilt'
 import ThemeContext from '../../context'
 class Portfolio extends React.Component {
+    handleItemClick(e){
+        console.log(e);
+    }
   constructor(props) {
     super(props)
     const { items } = this.props
@@ -68,6 +71,7 @@ class Portfolio extends React.Component {
             <div className="content">
               <div
                 className="portfolio_container"
+                onClick={this.handleItemClick()}
                 style={{
                   maxHeight:
                     this.context.height !== 'auto'
@@ -128,7 +132,7 @@ class Portfolio extends React.Component {
                     }}
                   />
                   <Tilt className="Tilt" options={{ scale: 1, max: 50 }}>
-                    <div className="overlay">
+                    <div className="overlay" onClick={window.open(value.content.frontmatter.link + ", _newtab")}>
                       <span className="title">
                         {value.content.frontmatter.title}
                       </span>

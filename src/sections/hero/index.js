@@ -6,7 +6,7 @@ import { Row, Col } from 'react-bootstrap'
 import Glitch from 'components/glitch'
 import Typewriter from 'typewriter-effect'
 import ThemeContext from '../../context'
-import Resume from './Krishna_Resume_1:7:22.pdf';
+import Resume from './Krish_Resume_6:28:22.pdf';
 class Hero extends React.Component {
 
   static contextType = ThemeContext
